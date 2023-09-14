@@ -29,12 +29,12 @@ if __name__ == '__main__':
     # load up the .env entries as environment variables
     load_dotenv(find_dotenv())
 
-    logging.INFO('Downloading historical price data...')
+    logging.log(msg='Downloading historical price data...', level=logging.INFO)
 
     res = requests.get('https://api.binance.us/api/v3/klines?symbol=ETHUSD&interval=1s&limit=1000')
     with open(project_dir / 'data/raw/ETH-USD.json', 'w+', encoding='utf-8') as f:
         f.write(res.text)
         f.close()
-        logging.INFO('Download complete.')
+        logging.log(msg='Download complete.', level=logging.INFO)
 
     main()
