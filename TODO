@@ -1,6 +1,8 @@
 - Data Wrangling
 [ ] Find some sort of social Metric
-[ ] Turn datetime objects to strings or find a way to filter datetime objects
+[x] Turn datetime objects to strings or find a way to filter datetime objects
+[x] Write newly created data frame to CSV file for EDA
+
+- EDA
 [ ] Research indicators useful in crypto-currency
 [ ] Add in indicators such as RSI
-[ ] Write nealy created data frame to CSV file for EDA
